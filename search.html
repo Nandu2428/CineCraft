@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/spinner.css">
+    <link rel="stylesheet" href="/lib/swiper.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/" class="logo1"><b>CINECRAFT</b></a>
+        <ul>
+            <li><a href="/" class="nav-link">Movies</a></li>
+            <li><a href="/shows.html" class="nav-link">Shows</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <div class="container">
+            <div id="alert"></div>
+            <form action="/search.html" class="search-form">
+                <div class="search-radio">
+                    <input type="radio" id="movie" name="type" value="movie" checked />
+                    <label for="movies">Movies</label>
+                    <input type="radio" id="tv" name="type" value="tv" />
+                    <label for="shows">TV Shows</label>
+                </div>
+                <div class="search-flex">
+                    <input type="text" name="search-term" id="search-term" placeholder="Enter search term" />
+                    <button type="submit"> submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Search Results -->
+    <section id="search-results-wrapper" class="container">
+        <div id="search-results-heading"></div>
+        <div id="search-results" class="grid"></div>
+        <div id="pagination"></div>
+    </section>
+    <div class="footer">
+        <h1>CINECRAFT</h1>
+    </div>
+    <div class="spinner"></div>
+    <script src="script.js"></script>
+    <script src="lib/swipper.js"></script>
+    
+</body>
+</html>

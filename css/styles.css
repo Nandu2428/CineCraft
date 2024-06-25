@@ -1,0 +1,312 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+   
+}
+body{
+    background-color:rgb(4, 4, 55);
+    color:white;
+}
+.footer{
+    margin-top: 30px;
+    height:200px;
+    vertical-align: middle;
+    background-color: black;
+}
+.footer h1{
+    padding-left: 530px;
+    padding-top: 90px;
+}
+
+
+
+/*header*/
+nav{
+    height:70px;
+    color: white;
+    background-color: black;
+}
+nav .logo1{
+    position: absolute;
+    left:50px;
+    top:19px;
+    font-size: larger;
+    color:white;
+}
+nav ul{
+    float:right;
+    list-style: none;
+    margin-right: 40px;
+}
+nav ul li{
+    display:inline-block;
+    line-height:19px;
+    margin:19px 15px;
+}
+nav ul li a{
+    position:relative;
+    color:white;
+    padding-bottom: 8px;
+    font-size:18px;
+}
+nav ul li a:before{
+    position: absolute;
+    content:'';
+    left:0;
+    bottom:0;
+    height:2px;
+    width:100%;
+    background: white;
+    transform:scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.active {
+    color: rgb(124, 243, 6);
+    font-weight: bolder;
+}
+
+
+
+
+/*now playing*/
+.now-playing{
+    position:relative;
+    margin:0px 30px 80px 30px;
+}
+.centered {
+    top: 1%;
+    margin-bottom: 20px;
+    text-align: center;
+    left: 40%;
+    color:white;
+}
+.swiper {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    padding-left: 50px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-rating {
+    padding: 10px;
+}
+
+
+
+/*Search*/
+.search{
+    padding-left:450px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.search-radio{
+    margin-bottom: 10px;
+}
+#search-term{
+    width:350px;
+    height:30px;
+    padding-left: 4px;
+    background-color: black;
+    color:#ffffff;
+    border-width: 0.1px;
+}
+#search-term:active{
+    border-radius: 5px;
+    border-width: 0.1px;
+}
+#search-results-heading{
+    text-align: center;
+}
+#search-results{
+    padding:20px 30px 30px 30px;
+}
+#pagination{
+    text-align: center;
+}
+.search-flex
+.btn{
+    background-color:chocolate;
+    width:50px;
+    height:30px;
+    border:none;
+    border-radius: 5px;
+}
+
+
+/*popular movie*/
+.popular-movies
+{
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#popular-movies{
+    margin-top: 25px;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Card */
+
+.card {
+    background: #020d1d;
+    padding:3px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-img-top {
+    width: 400px;
+    height: 400px;
+    margin-right: 60px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    background: #020d1d;
+}
+.back{
+    margin-top:20px;
+    margin-left:50px;
+}
+.back
+.btn{
+    border-style:solid;
+    border-radius:5px;
+    padding:10px;
+}
+
+
+
+
+/*movie details*/
+#movie-details{
+    padding-left: 50px;
+    padding-right: 30px;
+}
+#tv-details{
+    padding-left: 50px;
+    padding-right: 30px;
+}
+.details-top
+h4{
+    margin-top:2px;
+    font-weight :900px;;
+
+}
+.details-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 30px;
+}
+
+.rate {
+    height: 20px;
+    width: 20px;
+}
+
+.details-top p {
+    margin: 10px 0;
+    text-align: justify;
+    
+}
+.details-top
+ul{
+   margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+.details-top .btn {
+    padding:5px;
+    border:solid;
+    color:white;
+}
+
+.details-bottom li {
+    margin: 15px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fff;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.shows{
+    margin-left: 30px;
+}
+.shows
+h2{
+    text-align: center;
+    margin:30px 0px 20px 0px;
+}
+.container1 .back .btn{
+    color:white;
+}
+
+
+/*pagination*/
+#pagination {
+    margin-top: 20px;
+}
+.page-counter {
+    margin-top: 10px;
+}
+#prev
+#next{
+    padding:18px;
+    background-color: #fff;
+    border-color: black;
+    border-width: 20px;
+}
+
+
+@media (max-width: 700px) {
+    .details-top {
+        display: block;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: #ccc solid 1px;
+    }
+    .search{
+       padding-left:30px;
+       position:relative
+
+    }
+}
+
+

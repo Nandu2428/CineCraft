@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/spinner.css">
+    <link rel="stylesheet" href="/lib/swiper.css">
+
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo1"><b>CINECRAFT</b></a>
+        <ul>
+            <li><a href="/" class="nav-link">Movies</a></li>
+            <li><a href="/shows.html" class="nav-link">Shows</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <form action="/search.html" class="search-form">
+            <div class="search-radio">
+                <input type="radio" id="movie" name="type" value="movie" checked />
+                <label for="movies">Movies</label>
+                <input type="radio" id="tv" name="type" value="tv" />
+                <label for="shows">TV Shows</label>
+            </div>
+            <div class="search-flex">
+                <input type="text" name="search-term" id="search-term" placeholder="Enter search term" />
+                <button class="btn" type="submit">Search</i></button>
+            </div>
+    </div>
+    </div>
+    <div class="now-playing">
+        <div class="centered"><h1>Now Playing</h1></div>
+        <div class="swiper">
+            <div class="swiper-wrapper"></div>
+        </div>
+    </div>
+    <div class="popular-movies">
+        <h1>Popular Movies</h1>
+        <div id="popular-movies" class="grid"></div>
+    </div>
+    <div class="footer">
+        <h1>CINECRAFT</h1>
+    </div>
+    <div class="spinner"></div>
+    <script src="script.js"></script>
+    <script src="lib/swipper.js"></script>
+</body>
+</html>
